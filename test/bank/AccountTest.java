@@ -21,6 +21,17 @@ class AccountTest {
         assertEquals(expected, actual);
     }
     @Test
+    void getBalanceWrongSum() {
+        Account account = new Account(new BigDecimal(100), 10);
+        BigDecimal expected = new BigDecimal(200);
+
+        //act
+        BigDecimal actual = account.getBalance();
+
+        //assert
+        assertNotEquals(expected, actual);
+    }
+    @Test
     void getBalanceNull() {
         // Arrange
         Account account = new Account(null, 10);

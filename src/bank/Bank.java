@@ -19,5 +19,4 @@ public class Bank {
         account.setBalance(account.getBalance().subtract(amount));
         return account.getBalance();
     }
-
 }
