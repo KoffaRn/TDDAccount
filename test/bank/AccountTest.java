@@ -1,13 +1,16 @@
 package bank;
 
+import main.java.bank.Account;
+import main.java.bank.NegativeBalanceException;
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class AccountTest {
     public int initialAccountNumber = 123456789;
@@ -25,6 +28,7 @@ class AccountTest {
         // Assert
         assertEquals(initialBalance, actual);
     }
+
     @Test
     void getBalanceWrongSum() {
         // arrange
