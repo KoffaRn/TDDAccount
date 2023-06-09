@@ -1,4 +1,4 @@
-package main.java.bank;
+package bank;
 
 public class NegativeBalanceException extends RuntimeException {
     // Skulle bara visa Wakana hur man gör egna Exceptions

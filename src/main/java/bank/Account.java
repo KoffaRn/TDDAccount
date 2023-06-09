@@ -1,4 +1,4 @@
-package main.java.bank;
+package bank;
 
 import java.math.BigDecimal;
 
